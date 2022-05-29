@@ -27,6 +27,9 @@ COLOR_MAP = {
 
 class FacialSegmentationDataset(data.Dataset):
     def __init__(self, root_dir, train, transform=None):
+        if not os.path.isdir(root_dir):
+            raise ValueError("Please download the dataset first, using `download_dataset.sh`")
+        
         self.transform = transform
 
         if train:
