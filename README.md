@@ -1,6 +1,6 @@
 # Facial Segmentation in PyTorch
 
-In this exercise you will build and train a face parts segmentation network from scratch.
+Very simple solution for FASSEG dataset, using UNet ad base model.
 
 ## Dataset
 
